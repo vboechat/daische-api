@@ -1,4 +1,4 @@
-import { UserPayloadEntity } from "src/modules/auth/types/payload.type";
+import { UserPayloadEntity } from "../../../modules/auth/types/payload.type";
 import { RequestTaskDto } from "../dtos/request.task.dto";
 import { TaskEntity } from "../entity/task.entity";
 

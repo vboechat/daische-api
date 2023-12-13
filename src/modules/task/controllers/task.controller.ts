@@ -12,13 +12,13 @@ import {
   UseGuards,
 } from "@nestjs/common";
 import { TaskControllerInterface } from "./task.controller.interface";
-import { ParseIdPipe } from "src/common/pipes/parse-id.pipe";
+import { ParseIdPipe } from "../../../common/pipes/parse-id.pipe";
 import { TaskEntity } from "../entity/task.entity";
 import { RequestTaskDto } from "../dtos/request.task.dto";
 import { TaskServiceInterface } from "../services/task.service.interface";
-import { AuthGuard } from "src/modules/auth/guards/auth.guard";
-import { UserPayloadEntity } from "src/modules/auth/types/payload.type";
-import { User } from "src/modules/auth/decorators/user.decorator";
+import { AuthGuard } from "../../../modules/auth/guards/auth.guard";
+import { UserPayloadEntity } from "../../../modules/auth/types/payload.type";
+import { User } from "../../../modules/auth/decorators/user.decorator";
 
 @UseGuards(AuthGuard)
 @Controller("task")

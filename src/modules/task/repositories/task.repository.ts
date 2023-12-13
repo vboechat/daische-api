@@ -1,9 +1,9 @@
-import { PrismaService } from "src/common/services/prisma.client.service";
+import { PrismaService } from "../../../common/services/prisma.client.service";
 import { RequestTaskDto } from "../dtos/request.task.dto";
 import { TaskEntity } from "../entity/task.entity";
 import { TaskRepositoryInterface } from "./task.repository.interface";
 import { Injectable } from "@nestjs/common";
-import { UserPayloadEntity } from "src/modules/auth/types/payload.type";
+import { UserPayloadEntity } from "../../../modules/auth/types/payload.type";
 
 @Injectable()
 export class TaskRepository implements TaskRepositoryInterface {

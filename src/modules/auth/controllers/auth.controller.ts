@@ -8,14 +8,14 @@ import {
   UseGuards,
   Inject,
 } from "@nestjs/common";
-import { SignInUserDto } from "src/modules/user/dtos/sign-in.user.dto";
+import { SignInUserDto } from "../../../modules/user/dtos/sign-in.user.dto";
 import { AuthGuard } from "../guards/auth.guard";
 import { User } from "../decorators/user.decorator";
 import { UserPayloadEntity } from "../types/payload.type";
 import { SignInResponse } from "../types/sign-in.response.type";
 import { AuthControllerInterface } from "./auth.controller.interface";
 import { AuthServiceInterface } from "../services/auth.service.interface";
-import { RequestUserDto } from "src/modules/user/dtos/request.user.dto";
+import { RequestUserDto } from "../../../modules/user/dtos/request.user.dto";
 
 @Controller("auth")
 export class AuthController implements AuthControllerInterface {

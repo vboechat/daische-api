@@ -3,7 +3,7 @@ import { TaskServiceInterface } from "./task.service.interface";
 import { TaskEntity } from "../entity/task.entity";
 import { TaskRepositoryInterface } from "../repositories/task.repository.interface";
 import { RequestTaskDto } from "../dtos/request.task.dto";
-import { UserPayloadEntity } from "src/modules/auth/types/payload.type";
+import { UserPayloadEntity } from "../../../modules/auth/types/payload.type";
 
 @Injectable()
 export class TaskService implements TaskServiceInterface {
