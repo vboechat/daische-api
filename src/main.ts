@@ -25,7 +25,9 @@ async function bootstrap() {
     })
   );
 
-  configureSwagger(app);
+  if (process.env.NODE_ENV === "development") {
+    configureSwagger(app);
+  }
 
   await app.register(helmet);
   app.enableCors();
