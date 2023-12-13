@@ -32,7 +32,7 @@ async function bootstrap() {
   await app.register(helmet);
   app.enableCors();
 
-  await app.listen(3000, "0.0.0.0");
+  await app.listen(process.env.PORT || 3000);
 }
 
 bootstrap().then(() => console.log("Server started"));
